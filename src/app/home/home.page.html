@@ -1,0 +1,100 @@
+<ion-header translucent="true">
+</ion-header>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Hola, {{ username }} le saluda Bazar RadaL</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="home" slot="start"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="cart" slot="start"></ion-icon>
+        <ion-label>Pedidos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="settings" slot="start"></ion-icon>
+        <ion-label>Configuración</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail" slot="start"></ion-icon>
+        <ion-label>Contactanos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="list" slot="start"></ion-icon>
+        <ion-label>Nuestros Productos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="pricetag" slot="start"></ion-icon>
+        <ion-label>Promociones</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>Mi Cuenta</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="cart" slot="start"></ion-icon>
+        <ion-label>Carrito de Compras</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="newspaper" slot="start"></ion-icon>
+        <ion-label>Blog</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="information-circle" slot="start"></ion-icon>
+        <ion-label>Acerca de Nosotros</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="help-circle" slot="start"></ion-icon>
+        <ion-label>Soporte</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="globe" slot="start"></ion-icon>
+        <ion-label>Idioma</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock-closed" slot="start"></ion-icon>
+        <ion-label>Política de Privacidad</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="log-out" slot="start"></ion-icon>
+        <ion-label>Cerrar Sesión</ion-label>
+      </ion-item>
+      <!-- Agrega más elementos de menú según sea necesario -->
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Bazar RadaL</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <!-- Nuevo contenido de la página de inicio -->
+    <h1>Bienvenido a Bazar RadaL</h1>
+    <p>Explora nuestras ofertas exclusivas y encuentra los mejores productos.</p>
+    <ion-button expand="full" color="primary">Empezar a Comprar</ion-button>
+    <ion-content>
+      <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button (click)="addPhotoToGallery()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-content>
+    <ion-button expand="full" (click)="requestPermission()">
+      Solicitar Permiso de Ubicación
+    </ion-button>
+    <!-- Fin del nuevo contenido -->
+  </ion-content>
+  
+  
+</div>
+

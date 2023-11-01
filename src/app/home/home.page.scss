@@ -1,0 +1,27 @@
+.content-grid {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.custom-box {
+  padding: 1rem;
+}
+
+.toolbar-container{
+  background-color: white;
+}
+
+
+
+
+
