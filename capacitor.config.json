@@ -1,0 +1,11 @@
+{
+  "appId": "proyecto.panaderia.app",
+  "appName": "proyecto_panaderia",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "Camera": {}
+  }
+}
